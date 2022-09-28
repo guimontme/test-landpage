@@ -1,0 +1,87 @@
+---
+
+---
+<section id="banner-topo">
+    <div id="carouselBannerTopo" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselBannerTopo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselBannerTopo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselBannerTopo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Lorem ipsum dolor sit amet</h5>
+                    <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <img src="/assets/img/banner/banner1.png" class="d-block w-100" alt="Banner 1">
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Lorem ipsum dolor sit amet</h5>
+                    <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <img src="/assets/img/banner/banner1.png" class="d-block w-100" alt="Banner 1">
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Lorem ipsum dolor sit amet</h5>
+                    <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <img src="/assets/img/banner/banner1.png" class="d-block w-100" alt="Banner 1">
+            </div>
+        </div>
+    </div>
+</section>
+
+<style lang="scss">
+#banner-topo {
+    #carouselBannerTopo {
+        .carousel-item {
+            // height: 100vh;
+            // min-height: 300px;
+            background-size: cover;
+            &::before {
+                background-color: #000;
+                mix-blend-mode: multiply;
+                opacity: 0.65;
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+            }
+            .carousel-caption {
+                margin-bottom: 150px;
+                h5 {
+                    font-size: 50px;
+                    line-height: 1.2;
+                    font-weight: 600;
+                    font-family: Canaro, Arial, Helvetica, sans-serif;
+                    text-shadow: 0px 0px 10px #00000080;
+                }
+                p {
+                    font-size: 30px;
+                    line-height: 1.2;
+                    font-weight: 300;
+                    font-family: Canaro, Arial, Helvetica, sans-serif;
+                }
+            }
+        }
+        .carousel-indicators {
+            button {
+                width: 23px;
+                height: 23px;
+                border-radius: 50%;
+            }
+            button + button {
+                margin-left: 30px;
+            }
+        }
+    }
+}
+</style>

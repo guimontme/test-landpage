@@ -1,11 +1,13 @@
 ---
-
+import facebook from '../../assets/img/Icon-facebook.svg';
+import instagram from '../../assets/img/Icon-instagram.svg';
+import linkedin from '../../assets/img/Icon-linkedin.svg';
 ---
 <footer id="footer">
     <div class="container">
         <div class="row ">
-            <div class="col-md-4"></div>
-            <div class="col-md-4">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
                 <nav class="menu_footer">
                     <ul>
                         <li><a href="/#quem-somos">Quem somos</a></li>
@@ -15,13 +17,19 @@
                     </ul>
                 </nav>
             </div>
-            <div class="col-md-4">
-                
+            <div class="col-md-3">
+                <ul class="social-media">
+                    <li><a href="https://linkedin.com/in/guimontme" target="_blank"><img src={linkedin} alt=""></a></li>
+                    <li><a href="https://github.com/guimontme" target="_blank"><img src={facebook} alt=""></a></li>
+                    <li><a href="https://instagram.com/guimontme" target="_blank"><img src={instagram} alt=""></a></li>
+                </ul>
             </div>
         </div>
-        <div class="row row_copy text-center">
-            <div class="copyright">
-                <h6>Health Clinic São Paulo - Todos os Direitos Reservados.</h6> 
+        <div class="row text-center">
+            <div class="col-12 row_copy">
+                <div class="copyright">
+                    <h6>Health Clinic São Paulo - Todos os Direitos Reservados.</h6> 
+                </div>
             </div>
         </div>
     </div>
@@ -53,16 +61,29 @@
             }
         }
     }
-    hr {
-
+    .social-media {
+        display: flex;
+        justify-content: center;
+        @media (min-width: 768px) {
+            justify-content: end;
+        }
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li + li {
+            margin-left: 14px;
+        }
     }
     .row_copy {
         border-top: 1px solid #fff;
         margin-top: 63px;
         padding-top: 40px;
         .copyright {
-            font: normal normal normal 16px/21px Segoe UI;
-            color: #FFFFFF;
+            h6 {
+                font: normal normal normal 16px/21px Segoe UI;
+                color: #FFFFFF;
+                margin-bottom: 0;
+            }
         }
     }
 }
