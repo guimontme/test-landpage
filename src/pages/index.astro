@@ -1,12 +1,21 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import BannerTopo from '../components/home/BannerTopo.astro';
+import QuemSomos from '../components/home/QuemSomos.astro';
+import Equipe from '../components/home/Equipe.astro';
+import Espaco from '../components/home/Espaco.astro';
 ---
 
 <Layout title="Health Clinic">
 	<BannerTopo />
+  <QuemSomos />
+  <Equipe />
+  <Espaco />
 </Layout>
 
-<style>
+<style lang="scss">
+  * {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
 
 </style>

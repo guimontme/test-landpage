@@ -1,0 +1,35 @@
+---
+import BlockText from "../BlockText.astro";
+---
+
+<section>
+  <a id="equipe" class="anchor"></a>
+  <div class="container pb-5">
+    <div class="row">
+      <div class="col-md-6 d-flex align-items-center py-5">
+        <BlockText title="Nossa equipe" subtitle="Lorem ipsum dolor sit amet">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus
+            bibendum scelerisque. Duis ornare et risus id faucibus. Fusce
+            tincidunt leo elit. Suspendisse potenti. Nunc vestibulum dolor et
+            risus viverra mattis. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Donec a ex quis sapien laoreet eleifend.
+          </p>
+        </BlockText>
+      </div>
+      <div class="col-md-6 px-0">
+        <img src="../assets/img/home/equipe-2.png" class="img-fluid" alt="Nossa Equipe" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<style lang="scss">
+  section {
+    position: relative;
+    a.anchor {
+      position: absolute;
+      top: -80px;
+    }
+  }
+</style>

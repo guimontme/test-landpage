@@ -1,0 +1,38 @@
+---
+import BlockText from "../BlockText.astro";
+---
+
+<section>
+  <a id="quem-somos" class="anchor"></a>
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-md-6 d-flex align-items-center order-md-1 ps-md-5 py-5">
+        <BlockText title="Quem somos" subtitle="Lorem ipsum dolor sit amet.">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus
+            bibendum scelerisque. Duis ornare et risus id faucibus. Fusce
+            tincidunt leo elit. Suspendisse potenti. Nunc vestibulum dolor et
+            risus viverra mattis. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Donec a ex quis sapien laoreet eleifend.
+          </p>
+          <p>
+            <a href="#" class="btn btn-danger">Saiba mais</a>
+          </p>
+        </BlockText>
+      </div>
+      <div class="col-md-6 px-0">
+        <img src="../assets/img/home/quem-somos.png" class="img-fluid" alt="Quem Somos" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<style lang="scss">
+    section {
+    position: relative;
+    a.anchor {
+      position: absolute;
+      top: -50px;
+    }
+  }
+</style>

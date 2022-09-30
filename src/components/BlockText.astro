@@ -1,0 +1,48 @@
+---
+const {title, subtitle} = Astro.props;
+---
+<div class="block_text">
+  <h2>{title}</h2>
+  <h3>{subtitle}</h3>
+  <div class="text">
+    <slot />
+  </div>
+</div>
+
+<style lang="scss">
+  .block_text {
+    max-width: 385px;
+    h2 {
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 36px;
+      letter-spacing: 0px;
+      color: #575756;
+
+      &::after {
+        display: inline-block;
+        content: "";
+        width: 50px;
+        height: 1px;
+        vertical-align: middle;
+        margin-left: 10px;
+        border-bottom: 2px solid #575756;
+      }
+    }
+    h3 {
+      font-weight: 600;
+      font-size: 50px;
+      line-height: 60px;
+      color: #575756;
+      margin-bottom: 36px;
+    }
+    .text {
+      color: #575756;
+      font-family: 'Segoe UI';
+      p {
+        font-size: 16px;
+        line-height: 21px;
+      }
+    }
+  }
+</style>

@@ -1,0 +1,69 @@
+---
+import BlockText from "../BlockText.astro";
+---
+
+<section class="mb-5">
+  <a id="espaco" class="anchor"></a>
+  <div class="bg-light block">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-6 d-flex align-items-center ps-md-5 py-5">
+          <BlockText title="Nosso Espaço" subtitle="Lorem ipsum dolor sit amet.">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus
+              bibendum scelerisque. Duis ornare et risus id faucibus. Fusce
+              tincidunt leo elit. Suspendisse potenti. Nunc vestibulum dolor et
+              risus viverra mattis. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Donec a ex quis sapien laoreet eleifend.
+            </p>
+          </BlockText>
+        </div>
+        <div class="col-md-6">
+          <div class="slider">
+            <img src="../assets/img/home/espaco.png" class=""  alt="Espaço" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style lang="scss">
+    section {
+    position: relative;
+    overflow: hidden;
+    .block {
+      margin: 20px 40px;
+      height: 825px;
+      position: relative;
+      &::before{
+        z-index: 0;
+        content: "";
+        position: absolute;
+        left: -40px;
+        top: 0;
+        bottom: 0;
+        width: 536px;
+        height: 825px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='535.896' height='825' viewBox='0 0 535.896 825'%3E%3Cdefs%3E%3Cstyle%3E.a%7Bfill:%23d5cb9f%3Bopacity:0.7%3Bmix-blend-mode:multiply%3Bisolation:isolate%3B%7D%3C/style%3E%3C/defs%3E%3Cpath class='a' d='M1507.559 987.457 1155.375 632.885 1343.293 443.7l164.266-165.376V220.385L1317.084 412.149l-80.88-81.436a154.509 154.509 0 0 0-219.216.009l-.85.885c-59.583 60.826-59.225 159.454.815 219.851l80.871 81.436L1016.969 714.3c-60.057 60.406-60.433 159.034-.832 219.851l.743.8a154.537 154.537 0 0 0 219.333.08l80.871-81.4 190.493 191.754Zm-300.114-81.373a114.216 114.216 0 0 1-160.814.868l-.805-.823a115.6 115.6 0 0 1-.08-162.862l80.854-81.409 161.7 162.808Zm-161.726-383.6a115.6 115.6 0 0 1 .008-162.755l.9-.9c44.564-43.92 116.7-43.518 160.8.868l80.872 81.409-17.049 17.175c-44.556 44.859-87.715 88.323-127.619 128.469l-17.049 17.165Z' transform='translate(1507.577 1045.385) rotate(180)'/%3E%3C/svg%3E");
+      }
+    }
+    .container {
+      position: relative;
+      z-index: 10;
+    }
+    .slider {
+      position: absolute;
+      top: 150px;
+      img {
+        max-width: 725px;
+        height: auto;
+      }
+    }
+
+    a.anchor {
+      position: absolute;
+      top: -50px;
+    }
+  }
+</style>
